@@ -3,6 +3,10 @@ node_modules
 bower_components
 _site
 
+# Compiles files
+img
+css
+
 
 # These should be in global .gitignore
 .sass-cache

@@ -102,17 +102,23 @@ gulp.task('server', function() {
 
 gulp.task('serve', ['server']);
 
+gulp.task('build', function() {
+  runSequence(['sass', 'images'],
+    'jekyll-build'
+  );
+});
+
 
 gulp.task('deploy', function() {
-  runSequence(['lint', 'sass', 'fonts'],
-    'jekyll-build'
+  runSequence(
+    'build',
     'gh-pages'
   );
 });
 
-gulp.task('deploy', function () {
+gulp.task('gh-pages', function () {
   gulp.src("./dist/**/*")
     .pipe(deploy({
-      
+
     }));
 });
