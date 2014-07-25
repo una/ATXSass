@@ -1,0 +1,8 @@
+name: ATX Sass
+permalink: pretty
+debug: false
+development: false
+
+markdown: redcarpet
+
+exclude: [CONTRIBUTING.md, README.md, config.rb, package.json, gulpfile.js, Gemfile, Gemfile.lock, node_modules, bower_components, bower.json]

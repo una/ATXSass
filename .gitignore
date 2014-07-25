@@ -1,0 +1,9 @@
+# Files brought in
+node_modules
+bower_components
+_site
+
+
+# These should be in global .gitignore
+.sass-cache
+.DS_cache
