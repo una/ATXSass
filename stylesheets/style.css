@@ -1,0 +1,117 @@
+/* line 17, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 14, ../sass/style.scss */
+body {
+  font-family: 'Open Sans';
+  height: 1200px;
+  overflow: hidden;
+  background: #cc6699;
+  background: -moz-radial-gradient(0% 100%, ellipse cover, rgba(104, 128, 178, 0.4) 10%, rgba(138, 114, 176, 0) 40%), -moz-linear-gradient(top, rgba(157, 173, 219, 0.25) 0%, rgba(142, 60, 187, 0.4) 100%), -moz-linear-gradient(-45deg, #cc6699 0%, #000925 100%);
+  background: -webkit-radial-gradient(0% 100%, ellipse cover, rgba(104, 128, 178, 0.4) 10%, rgba(138, 114, 176, 0) 40%), -webkit-linear-gradient(top, rgba(157, 173, 219, 0.25) 0%, rgba(142, 60, 187, 0.4) 100%), -webkit-linear-gradient(-45deg, #cc6699 0%, #000925 100%);
+  background: -o-radial-gradient(0% 100%, ellipse cover, rgba(104, 128, 178, 0.4) 10%, rgba(138, 114, 176, 0) 40%), -o-linear-gradient(top, rgba(157, 173, 219, 0.25) 0%, rgba(142, 60, 187, 0.4) 100%), -o-linear-gradient(-45deg, #cc6699 0%, #000925 100%);
+  background: -ms-radial-gradient(0% 100%, ellipse cover, rgba(104, 128, 178, 0.4) 10%, rgba(138, 114, 176, 0) 40%), -ms-linear-gradient(top, rgba(157, 173, 219, 0.25) 0%, rgba(142, 60, 187, 0.4) 100%), -ms-linear-gradient(-45deg, #cc6699 0%, #000925 100%);
+  background: -webkit-radial-gradient(0% 100%, ellipse cover, rgba(104, 128, 178, 0.4) 10%, rgba(138, 114, 176, 0) 40%), linear-gradient(to bottom, rgba(157, 173, 219, 0.25) 0%, rgba(142, 60, 187, 0.4) 100%), linear-gradient(135deg, #cc6699 0%, #000925 100%);
+}
+
+/* line 26, ../sass/style.scss */
+h1 {
+  font-size: 2em;
+  color: white;
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 1em;
+}
+
+/* line 34, ../sass/style.scss */
+.logo-image {
+  background: url("../img/ATXSass-Logo.png") 100%;
+  width: 400px;
+  height: 260px;
+  display: block;
+  position: relative;
+  margin: 60px auto 20px;
+  background-size: 100%;
+}
+
+/* line 44, ../sass/style.scss */
+.donation-form {
+  margin: 0 auto;
+  text-align: center;
+  width: 200px;
+}
+
+/* line 50, ../sass/style.scss */
+.contrib-btn {
+  width: 100%;
+  -webkit-transition-duration: 0.8s;
+  -moz-transition-duration: 0.8s;
+  -o-transition-duration: 0.8s;
+  transition-duration: 0.8s;
+}
+/* line 54, ../sass/style.scss */
+.contrib-btn:hover {
+  background: #71cbce;
+}
