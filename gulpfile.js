@@ -14,10 +14,11 @@ var deploy = require("gulp-gh-pages");
 
 var paths = {
   sass: ['_sass/style.scss'],
-  css: '_src/css',
+  css: 'css',
   imagesSrc: ['_images/**/*'],
-  imagesDest: '_src/images',
-  jekyll: ['**/*.html', '**/*.md', '!_site/**/*.html']
+  imagesDest: 'images',
+  jekyll: ['**/*.html', '**/*.md', '!_site/**/*.html'],
+  assets: '_site/assets',
 }
 
 gulp.task('sass', function() {
@@ -33,7 +34,9 @@ gulp.task('sass', function() {
       ]
     }))
     .pipe(prefix("last 2 versions", "> 1%"))
-    .pipe(gulp.dest(paths.css));
+    .pipe(gulp.dest(paths.css))
+    .pipe(gulp.dest(paths.assets))
+    .pipe(browserSync.reload({stream:true}));
 });
 
 gulp.task('images', function() {

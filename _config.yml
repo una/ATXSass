@@ -15,10 +15,10 @@ exclude: [CONTRIBUTING.md, README.md, config.rb, package.json, gulpfile.js, Gemf
 assets:
   dirname: assets
   sources:
-    - _src/js
-    - _src/css
-    - _src/images
-    - _src/bower_components
+    - js
+    - css
+    - images
+    - bower_components
   js_compressor: 'uglifier'
   css_compressor: 'yui'
   cache: true

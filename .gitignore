@@ -4,7 +4,8 @@ bower_components
 _site
 
 # Compiles files
-_src
+images
+css
 .jekyll-assets-cache
 
 # These should be in global .gitignore
