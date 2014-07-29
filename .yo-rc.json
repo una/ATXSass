@@ -1,0 +1,11 @@
+{
+  "generator-poole": {
+    "projectName": "ATX Sass",
+    "projectSlug": "atx-sass",
+    "projectOptions": [
+      "Gulp",
+      "Bower"
+    ],
+    "currentDate": "2014-07-25"
+  }
+}

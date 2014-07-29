@@ -1,0 +1,49 @@
+/////////////////////////////////////////////////
+// Welcome to the primary Sass file.
+//
+// You can put all of your partials here.
+/////////////////////////////////////////////////
+
+@import 'base/base';
+
+
+body {
+	font-family: 'Open Sans';
+	height: 1200px;
+	overflow: hidden;
+	background: $color-5;
+  background: radial-gradient(0% 100%, ellipse cover, $color-1 10%,$color-2  40%), linear-gradient(to bottom, $color-3 0%,$color-4 100%), linear-gradient(135deg, $color-5 0%,$color-6 100%);
+	}
+
+h1 {
+	font-size: 2em;
+	color: white;
+	text-align: center;
+	font-weight: 400;
+	margin-bottom: 1em;
+}
+
+.logo-image {
+	background: url('../images/ATXSass-Logo.png') 100%;
+	width: 400px;
+	height: 260px;
+	display: block;
+	position: relative;
+	margin: 60px auto 20px;
+	background-size: 100%;
+}
+
+.donation-form {
+	margin: 0 auto;
+	text-align: center;
+	width: 200px;
+}
+
+.contrib-btn {
+	width: 100%;
+	transition-duration: 0.8s;
+
+	&:hover {
+		background: $color-7;
+	}
+}

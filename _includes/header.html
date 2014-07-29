@@ -1,0 +1,14 @@
+<header role="banner">
+  <nav role="navigation">
+    <ol class="menubar" role="menubar">
+      {% for page in site.pages %}
+      <li>
+        <a class="menubar-link" role="menuitem" href="{{ page.url | prepend: site.baseurl }}">{% if page.link %}{{ page.link }}{% else %}{{ page.title }}{% endif %}</a>
+      </li>
+      {% endfor %}
+    </ol>
+  </nav>
+
+  <div class="logo-image"></div>
+  <h1>{{ page.title }}</h1>
+</header>

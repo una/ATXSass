@@ -1,0 +1,31 @@
+name: ATX Sass
+permalink: :year/:month/:day/:title.html
+debug: false
+env: production
+development: false
+
+paginate: 5
+paginate_path: "updates/page:num"
+timezone: America/Chicago
+
+markdown: kramdown
+
+exclude: [CONTRIBUTING.md, README.md, config.rb, package.json, gulpfile.js, Gemfile, Gemfile.lock, node_modules, bower_components, bower.json]
+
+assets:
+  dirname: assets
+  sources:
+    - js
+    - css
+    - images
+    - bower_components
+  js_compressor: 'uglifier'
+  css_compressor: 'yui'
+  cache: true
+
+collections:
+  talks:
+    output: true
+    permalink: /talks/:year/:month/:day/:title.html
+    speaker: ''
+    link: ''
