@@ -1,5 +1,5 @@
 name: ATX Sass
-permalink: date
+permalink: :year/:month/:day/:title.html
 debug: false
 development: false
 
@@ -10,3 +10,10 @@ timezone: America/Chicago
 markdown: kramdown
 
 exclude: [CONTRIBUTING.md, README.md, config.rb, package.json, gulpfile.js, Gemfile, Gemfile.lock, node_modules, bower_components, bower.json]
+
+collections:
+  talks:
+    output: true
+    permalink: /talks/:year/:month/:day/:title.html
+    speaker: ''
+    link: ''

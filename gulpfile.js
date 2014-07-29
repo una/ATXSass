@@ -17,7 +17,7 @@ var paths = {
   css: 'css',
   imagesSrc: ['_images/**/*'],
   imagesDest: 'img',
-  jekyll: ['**/*.html', '_posts/**/*.md', '!_site/**/*.html']
+  jekyll: ['**/*.html', '**/*.md', '!_site/**/*.html']
 }
 
 gulp.task('sass', function() {
