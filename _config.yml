@@ -1,8 +1,12 @@
 name: ATX Sass
-permalink: pretty
+permalink: date
 debug: false
 development: false
 
-markdown: redcarpet
+paginate: 5
+paginate_path: "updates/page:num"
+timezone: America/Chicago
+
+markdown: kramdown
 
 exclude: [CONTRIBUTING.md, README.md, config.rb, package.json, gulpfile.js, Gemfile, Gemfile.lock, node_modules, bower_components, bower.json]
