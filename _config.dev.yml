@@ -1,2 +1,14 @@
 development: true
 minify_html: false
+
+assets:
+  dirname: assets
+  sources:
+    - _src/js
+    - _src/css
+    - _src/img
+    - _src/bower_components
+  js_compressor:
+  css_compressor:
+  cache: true
+  cachebust: none

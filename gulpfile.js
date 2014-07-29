@@ -14,9 +14,9 @@ var deploy = require("gulp-gh-pages");
 
 var paths = {
   sass: ['_sass/style.scss'],
-  css: 'css',
+  css: '_src/css',
   imagesSrc: ['_images/**/*'],
-  imagesDest: 'img',
+  imagesDest: '_src/images',
   jekyll: ['**/*.html', '**/*.md', '!_site/**/*.html']
 }
 
@@ -33,7 +33,6 @@ gulp.task('sass', function() {
       ]
     }))
     .pipe(prefix("last 2 versions", "> 1%"))
-    .pipe(minifyCSS())
     .pipe(gulp.dest(paths.css));
 });
 

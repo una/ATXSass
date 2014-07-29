@@ -12,6 +12,17 @@ markdown: kramdown
 
 exclude: [CONTRIBUTING.md, README.md, config.rb, package.json, gulpfile.js, Gemfile, Gemfile.lock, node_modules, bower_components, bower.json]
 
+assets:
+  dirname: assets
+  sources:
+    - _src/js
+    - _src/css
+    - _src/images
+    - _src/bower_components
+  js_compressor: 'uglifier'
+  css_compressor: 'yui'
+  cache: true
+
 collections:
   talks:
     output: true
