@@ -87,32 +87,35 @@ gulp.task('jekyll-dev', function (done) {
 });
 
 gulp.task('jekyll-rebuild', function() {
-  runSequence(['jekyll-dev'], function () {
+  return runSequence(['jekyll-dev'], function () {
       browserSync.reload();
   });
 });
 
 
-gulp.task('server', function() {
-  runSequence(['images', 'sass'],
+gulp.task('server', function(cb) {
+  return runSequence(['images', 'sass'],
     'jekyll-dev',
-    ['browserSync', 'watch']
+    ['browserSync', 'watch'],
+    cb
   );
 });
 
 gulp.task('serve', ['server']);
 
-gulp.task('build', function() {
-  runSequence(['sass', 'images'],
-    'jekyll-build'
+gulp.task('build', function(cb) {
+  return runSequence(['sass', 'images'],
+    'jekyll-build',
+    cb
   );
 });
 
 
-gulp.task('deploy', function() {
-  runSequence(
+gulp.task('deploy', function(cb) {
+  return runSequence(
     'build',
-    'gh-pages'
+    'gh-pages',
+    cb
   );
 });
 
