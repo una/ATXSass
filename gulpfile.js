@@ -120,7 +120,7 @@ gulp.task('deploy', function(cb) {
 });
 
 gulp.task('gh-pages', function () {
-  gulp.src("./dist/**/*")
+  gulp.src("./_site/**/*")
     .pipe(deploy({
 
     }));

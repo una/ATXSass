@@ -1,1 +1,2 @@
 development: true
+minify_html: false

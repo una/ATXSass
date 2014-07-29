@@ -1,6 +1,7 @@
 name: ATX Sass
 permalink: :year/:month/:day/:title.html
 debug: false
+env: production
 development: false
 
 paginate: 5
