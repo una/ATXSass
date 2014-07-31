@@ -17,7 +17,7 @@ var paths = {
   css: 'css',
   imagesSrc: ['_images/**/*'],
   imagesDest: 'images',
-  jekyll: ['**/*.html', '**/*.md', '!_site/**/*.html'],
+  jekyll: ['**/*.html', '**/*.md', '!_site/**/*.html', '!node_modules/**/*'],
   assets: '_site/assets',
 }
 
@@ -65,7 +65,6 @@ gulp.task('watch', function() {
 gulp.task('browserSync', function () {
   browserSync.init([
     '_site/' + paths.assets +  '/**/*.css',
-    '_site/' + paths.assets + '/**/*.js',
     '_site/**/*.html',
   ], {
     server: {
