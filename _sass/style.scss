@@ -5,6 +5,8 @@
 /////////////////////////////////////////////////
 
 @import 'base/base';
+@import 'partials/link';
+@import 'partials/container';
 
 
 body {
@@ -13,24 +15,25 @@ body {
 	overflow: hidden;
 	background: $color-5;
   background: radial-gradient(0% 100%, ellipse cover, $color-1 10%,$color-2  40%), linear-gradient(to bottom, $color-3 0%,$color-4 100%), linear-gradient(135deg, $color-5 0%,$color-6 100%);
-	}
-
-h1 {
-	font-size: 2em;
-	color: white;
-	text-align: center;
-	font-weight: 400;
-	margin-bottom: 1em;
 }
 
+
+@import 'partials/fonts';
+
+
 .logo-image {
-	background: url('../img/ATXSass-Logo.png') 100%;
-	width: 400px;
+	background: url('../images/ATXSass-Logo.png') 100%;
+	width: 100%;
+	max-width: 400px;
 	height: 260px;
 	display: block;
 	position: relative;
-	margin: 60px auto 20px;
 	background-size: 100%;
+	margin: 20px auto 15px;
+
+	@include breakpoint(450px) {
+		margin: 60px auto 20px;
+	}
 }
 
 .donation-form {
@@ -40,10 +43,9 @@ h1 {
 }
 
 .contrib-btn {
+	@extend %hover-button;
 	width: 100%;
-	transition-duration: 0.8s;
-
-	&:hover {
-		background: $color-7;
-	}
 }
+
+@import 'partials/navigation';
+@import 'partials/teaser';

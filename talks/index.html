@@ -1,0 +1,9 @@
+---
+layout: default
+title: Previous Talks
+id: talks
+---
+
+{% for talk in site.talks %}
+  {% include teaser.html post=talk %}
+{% endfor %}

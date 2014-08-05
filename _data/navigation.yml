@@ -1,0 +1,11 @@
+- name: home
+  url: /
+
+- name: sponsors
+  url: /sponsors/
+
+- name: updates
+  url: /updates/
+
+- name: talks
+  url: /talks/

@@ -13,11 +13,12 @@ var changed = require('gulp-changed');
 var deploy = require("gulp-gh-pages");
 
 var paths = {
-  sass: ['_sass/style.scss'],
+  sass: ['_sass/**/*.scss'],
   css: 'css',
   imagesSrc: ['_images/**/*'],
-  imagesDest: 'img',
-  jekyll: ['**/*.html', '_posts/**/*.md', '!_site/**/*.html']
+  imagesDest: 'images',
+  jekyll: ['**/*.html', '**/*.md', '!_site/**/*.html', '!node_modules/**/*'],
+  assets: '_site/assets',
 }
 
 gulp.task('sass', function() {
@@ -33,8 +34,9 @@ gulp.task('sass', function() {
       ]
     }))
     .pipe(prefix("last 2 versions", "> 1%"))
-    .pipe(minifyCSS())
-    .pipe(gulp.dest(paths.css));
+    .pipe(gulp.dest(paths.css))
+    .pipe(gulp.dest(paths.assets))
+    .pipe(browserSync.reload({stream:true}));
 });
 
 gulp.task('images', function() {
@@ -63,13 +65,11 @@ gulp.task('watch', function() {
 gulp.task('browserSync', function () {
   browserSync.init([
     '_site/' + paths.assets +  '/**/*.css',
-    '_site/' + paths.assets + '/**/*.js',
     '_site/**/*.html',
   ], {
     server: {
       baseDir: '_site'
-    },
-    host: "localhost"
+    }
   });
 });
 
@@ -87,37 +87,40 @@ gulp.task('jekyll-dev', function (done) {
 });
 
 gulp.task('jekyll-rebuild', function() {
-  runSequence(['jekyll-dev'], function () {
+  return runSequence(['jekyll-dev'], function () {
       browserSync.reload();
   });
 });
 
 
-gulp.task('server', function() {
-  runSequence(['images', 'sass'],
+gulp.task('server', function(cb) {
+  return runSequence(['images', 'sass'],
     'jekyll-dev',
-    ['browserSync', 'watch']
+    ['browserSync', 'watch'],
+    cb
   );
 });
 
 gulp.task('serve', ['server']);
 
-gulp.task('build', function() {
-  runSequence(['sass', 'images'],
-    'jekyll-build'
+gulp.task('build', function(cb) {
+  return runSequence(['sass', 'images'],
+    'jekyll-build',
+    cb
   );
 });
 
 
-gulp.task('deploy', function() {
-  runSequence(
+gulp.task('deploy', function(cb) {
+  return runSequence(
     'build',
-    'gh-pages'
+    'gh-pages',
+    cb
   );
 });
 
 gulp.task('gh-pages', function () {
-  gulp.src("./dist/**/*")
+  gulp.src("./_site/**/*")
     .pipe(deploy({
 
     }));

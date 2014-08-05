@@ -1,14 +1,14 @@
 ---
 layout: default
 ---
-<article class="post">
+<article class="talk">
   <header class="metadatas">
     <span class="date">{{ page.date | date: "%b %-d, %Y" }}</span>
-    {% if page.author %} • <span class="author">{{ page.author }}</span>{% endif %}
+    {% if page.speaker %} • <span class="speaker">{{ page.speaker }}</span>{% endif %}
     {% if page.meta %} • <span class="meta">{{ page.meta }}</span>{% endif %}</span>
   </header>
 
-  <div class="post-content">
+  <div class="content">
   {{ content }}
   </div>
 

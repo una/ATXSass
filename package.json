@@ -1,12 +1,12 @@
 {
   "name": "atx-sass",
   "version": "0.0.1",
-  "homepage": "http://fourkitchens.com",
+  "homepage": "http://atxsass.com",
   "repository": "https://github.com/una/ATXsass",
   "dependencies": {},
   "devDependencies": {
     "browser-sync": "^0.8.2",
-    "gulp": "^3.6.2",
+    "gulp": "^3.8.6",
     "gulp-autoprefixer": "0.0.8",
     "gulp-changed": "^0.3.0",
     "gulp-concat": "^2.2.0",

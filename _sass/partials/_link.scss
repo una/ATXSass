@@ -1,0 +1,11 @@
+/**
+ * Hover image state for a button.
+ */
+
+%hover-button {
+  transition: background 0.8s;
+
+  &:hover {
+    background: $color-7;
+  }
+}

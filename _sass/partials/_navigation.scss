@@ -1,0 +1,37 @@
+/**
+ * Navigation partial.
+ */
+
+#navigation {
+  margin-top: .2em;
+
+  .menubar-link {
+    @extend %hover-button;
+    padding: .25em .3em;
+    color: white;
+    $border: 2px solid white;
+    border: {
+      top: none;
+      left: $border;
+      right: $border;
+      bottom: $border;
+    }
+    text-decoration: none;
+    margin-right: .5em;
+
+    @include breakpoint(450px) {
+      padding: .4em 1em;
+      margin-right: 1em;
+    }
+
+    &.active {
+
+    }
+
+    &.active-trail {
+
+    }
+  }
+
+
+}
