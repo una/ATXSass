@@ -4,7 +4,7 @@ debug: false
 env: production
 development: false
 
-paginate: 2
+paginate: 5
 paginate_path: "updates/page:num"
 timezone: America/Chicago
 
