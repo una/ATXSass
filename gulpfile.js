@@ -13,7 +13,7 @@ var changed = require('gulp-changed');
 var deploy = require("gulp-gh-pages");
 
 var paths = {
-  sass: ['_sass/style.scss'],
+  sass: ['_sass/**/*.scss'],
   css: 'css',
   imagesSrc: ['_images/**/*'],
   imagesDest: 'images',
@@ -69,8 +69,7 @@ gulp.task('browserSync', function () {
   ], {
     server: {
       baseDir: '_site'
-    },
-    host: "localhost"
+    }
   });
 });
 

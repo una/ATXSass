@@ -1,0 +1,10 @@
+---
+layout: default
+title: Previous Talks
+id: talks
+---
+
+
+{% for talk in site.talks limit:3 %}
+  {% include teaser.html post=talk %}
+{% endfor %}

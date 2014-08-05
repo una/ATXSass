@@ -1,0 +1,11 @@
+- name: home
+  path: /index.html
+
+- name: sponsors
+  path: /sponsors.html
+
+- name: updates
+  path: /sponsors.html
+
+- name: talks
+  path: /talks.html

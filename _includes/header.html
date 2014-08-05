@@ -1,12 +1,14 @@
 <header role="banner">
-  <nav role="navigation">
-    <ol class="menubar" role="menubar">
-      {% for page in site.pages %}
-      <li>
-        <a class="menubar-link" role="menuitem" href="{{ page.url | prepend: site.baseurl }}">{% if page.link %}{{ page.link }}{% else %}{{ page.title }}{% endif %}</a>
-      </li>
+  <nav role="navigation" id="navigation">
+    <div class="menubar" role="menubar">
+      {% for nav in site.data.navigation %}
+        {% assign current = nil %}
+        {% if page.url == nav.path or page.layout == link.layout %}
+          {% assign current = 'current' %}
+        {% endif %}
+        <a class="menubar-link {{current}}" role="menuitem" href="{{ nav.path | prepend: site.baseurl }}">{{ nav.name }}</a>
       {% endfor %}
-    </ol>
+    </div>
   </nav>
 
   <div class="logo-image"></div>
