@@ -122,6 +122,5 @@ gulp.task('deploy', function(cb) {
 gulp.task('gh-pages', function () {
   gulp.src("./_site/**/*")
     .pipe(deploy({
-
     }));
 });
