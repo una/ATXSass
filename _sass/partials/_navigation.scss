@@ -4,16 +4,10 @@
 
 #navigation {
   margin-top: .2em;
-  margin-left: .2em;
-
-  @include breakpoint(450px) {
-    margin-left: 2em;
-    margin-top: .4em;
-  }
 
   .menubar-link {
     @extend %hover-button;
-    padding: .25em .4em;
+    padding: .25em .3em;
     color: white;
     $border: 2px solid white;
     border: {
@@ -28,6 +22,14 @@
     @include breakpoint(450px) {
       padding: .4em 1em;
       margin-right: 1em;
+    }
+
+    &.active {
+
+    }
+
+    &.active-trail {
+
     }
   }
 

@@ -1,11 +1,11 @@
 - name: home
-  path: /index.html
+  url: /
 
 - name: sponsors
-  path: /sponsors.html
+  url: /sponsors/
 
 - name: updates
-  path: /sponsors.html
+  url: /updates/
 
 - name: talks
-  path: /talks.html
+  url: /talks/

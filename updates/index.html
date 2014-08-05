@@ -1,0 +1,11 @@
+---
+layout: default
+title: Updates
+id: updates
+---
+
+{% for post in paginator.posts %}
+  {% include teaser.html post=post %}
+{% endfor %}
+
+{% include pagination.html %}

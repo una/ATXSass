@@ -1,12 +1,15 @@
-<header role="banner">
+<header role="banner" id="header">
   <nav role="navigation" id="navigation">
     <div class="menubar" role="menubar">
       {% for nav in site.data.navigation %}
         {% assign current = nil %}
-        {% if page.url == nav.path or page.layout == link.layout %}
-          {% assign current = 'current' %}
+        {% assign url = page.url|remove:'index.html' %}
+        {% if url == nav.url %}
+          {% assign current = 'active' %}
+        {% elsif page.dir contains nav.url and nav.url != '/' %}
+          {% assign current = 'active-trail' %}
         {% endif %}
-        <a class="menubar-link {{current}}" role="menuitem" href="{{ nav.path | prepend: site.baseurl }}">{{ nav.name }}</a>
+        <a class="menubar-link {{current}}" role="menuitem" href="{{ nav.url | prepend: site.baseurl }}">{{ nav.name }}</a>
       {% endfor %}
     </div>
   </nav>

@@ -4,7 +4,6 @@ title: Previous Talks
 id: talks
 ---
 
-
-{% for talk in site.talks limit:3 %}
+{% for talk in site.talks %}
   {% include teaser.html post=talk %}
 {% endfor %}
