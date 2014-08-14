@@ -11,10 +11,29 @@
 
 
 // colors
-$color-1: rgba(104,128,178,.4);
-$color-2: rgba(138,114,176,0);
-$color-3: rgba(157,173,219,.25);
-$color-4: rgba(142,60,187,.4);
-$color-5: #c69;
-$color-6: #000925;
-$color-7: #71cbce;
+//sass colors
+$hopbush: #c69;
+
+$color--bg: lightgrey;
+$color--accent: $hopbush;
+
+
+body {
+	font-family: 'Open Sans';
+	background-color: $color--bg;
+}
+
+.logo-image {
+	background: url('../images/ATXSass-Logo.png') 100%;
+	width: 100%;
+	max-width: 400px;
+	height: 260px;
+	display: block;
+	position: relative;
+	background-size: 100%;
+	margin: 20px auto 15px;
+
+	@include breakpoint(450px) {
+		margin: 60px auto 20px;
+	}
+}
