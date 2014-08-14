@@ -6,4 +6,4 @@ categories:
   - meetup
 ---
 
-Our very first meetup will be on 
+Our very first meetup will be on

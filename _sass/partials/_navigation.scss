@@ -25,12 +25,15 @@
     }
 
     &.active {
+      background: rgba($color-7, .5);
 
     }
 
     &.active-trail {
-
+      background: rgba($color-7, .3);
     }
+
+    &:hover { background: $color-7; }
   }
 
 

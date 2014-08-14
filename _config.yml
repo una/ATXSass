@@ -1,11 +1,11 @@
 name: ATX Sass
-permalink: updates/:year/:month/:day/:title.html
+permalink: meetups/:year/:month/:day/:title.html
 debug: false
 env: production
 development: false
 
 paginate: 5
-paginate_path: "updates/page:num"
+paginate_path: "meetups/:num/"
 timezone: America/Chicago
 
 markdown: kramdown
@@ -26,6 +26,6 @@ assets:
 collections:
   talks:
     output: true
-    permalink: /talks/:year/:month/:day/:title.html
+    permalink: /talks/:path/
     speaker: ''
     link: ''
