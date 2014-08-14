@@ -13,27 +13,44 @@
 // colors
 //sass colors
 $hopbush: #c69;
+$atx-hopbush: #cd669a;
+$cyan: #71cbce;
+$navy: #0d223e;
 
-$color--bg: lightgrey;
-$color--accent: $hopbush;
+//chosen colors
+$color--bg: gainsboro;
+$color--text: $navy;
+$color--accent: $atx-hopbush;
 
+* { 
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
 
 body {
 	font-family: 'Open Sans';
 	background-color: $color--bg;
 }
 
-.logo-image {
+%logo-image {
 	background: url('../images/ATXSass-Logo.png') 100%;
-	width: 100%;
-	max-width: 400px;
-	height: 260px;
-	display: block;
-	position: relative;
 	background-size: 100%;
-	margin: 20px auto 15px;
+	display: block;
+}
 
-	@include breakpoint(450px) {
-		margin: 60px auto 20px;
-	}
+%abs-center {
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	right: 0;
+	left: 0;
+}
+
+.logo-image--header {
+	@extend %logo-image;
+	@extend %abs-center;
+	width: 130px;
+	height: 100px;
+	top: 0;
 }

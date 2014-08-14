@@ -1,10 +1,11 @@
 <article class="teaser">
   <h2 class="title"><a href="{{ include.post.url }}">{{ include.post.title }}</a></h2>
   <div class="metadatas">
-    <span class="date">{{ include.post.date | date: "%Y-%m-%d" }}</span>
+    <span class="date">{{ include.post.date | date: "%B %d, %Y" }}</span>
+    <span class="speaker">{{ include.post.speaker }}</span>
   </div>
   <div class="content">
-    {{ include.post.excerpt }}
+    {{ include.post.content }}
   </div>
   <div class="read-more"><a href="{{ include.post.url }}">Read More</a></div>
 </article>

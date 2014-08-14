@@ -2,10 +2,26 @@
  * Hover image state for a button.
  */
 
+ %button {
+	text-decoration: none;
+}
+
 %hover-button {
-  transition: background 0.8s;
+	@extend %button;
+ 	transition: background 0.8s;
 
   &:hover {
     background: $color--accent;
   }
+}
+
+.button--white--outline {
+	@extend %hover-button;
+	$border: 2px solid white;
+	border: {
+	  top: none;
+	  left: $border;
+	  right: $border;
+	  bottom: $border;
+	}
 }

@@ -4,7 +4,7 @@
 
 h1 {
   font-size: 2em;
-  color: white;
+  color: $color--text;
   text-align: center;
   font-weight: 400;
   margin-bottom: 1em;
@@ -12,7 +12,11 @@ h1 {
 
 h2 {
   font-size: 1.5em;
-  color: white;
+  color: $color--text;
   font-weight: 400;
   margin-bottom: 1em;
+}
+
+p {
+	line-height: 1.5;
 }
