@@ -3,8 +3,7 @@
  */
 
 body {
-	font-size: 20px;
-	font-size: 1.2rem;
+	@include fontsize(16px);
 	line-height: 1.5;
 }
 

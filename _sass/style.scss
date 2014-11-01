@@ -4,7 +4,11 @@
 // You can put all of your partials here.
 /////////////////////////////////////////////////
 
+@import 'dependancies/mixins.scss';
+@import 'dependancies/vars.scss';
+
 @import 'base/base';
+
 @import 'partials/link';
 @import 'partials/container';
 @import 'partials/fonts';
@@ -12,5 +16,6 @@
 @import 'partials/teaser';
 @import 'partials/home';
 
+@import 'regions/intro';
 @import 'regions/header';
 @import 'regions/footer';

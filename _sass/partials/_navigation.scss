@@ -4,17 +4,18 @@
 
 #navigation {
   max-width: 580px;
-  margin: 2em auto 3em;
+  // margin: 2em auto 3em;
   display: block;
   overflow: hidden;
-
+  float: right;
 
   .menubar-link {
     text-decoration: none;
     transition: border-bottom .2s;
-    padding: .25em .3em;
-    color: $color--text;
+    padding: .5em .3em;
+    color: $color--text--invert;
     margin-right: .5em;
+    display: inline-block;
 
     @include breakpoint(450px) {
       padding: .4em 1em;
@@ -32,18 +33,16 @@
 
     &:hover { border-bottom: 2px solid $color--accent; }
 
-    &:nth-child(1),
-    &:nth-child(2) {
-      float: left;
-    }
+    // &:nth-child(1),
+    // &:nth-child(2) {
+    //   float: left;
+    // }
 
-    &:nth-child(3),
-    &:nth-child(4) {
-      float: right;
-    }
+    // &:nth-child(3),
+    // &:nth-child(4) {
+    //   float: right;
+    // }
 
   }
-
-
 
 }

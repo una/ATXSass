@@ -5,23 +5,10 @@
 @import 'reset';
 
 @import 'breakpoint';
-// @import 'singularitygs';
+@import 'singularitygs';
 @import 'toolkit';
 @import 'toolkit/kickstart';
 
-
-// colors
-//sass colors
-$hopbush: #c69;
-$atx-hopbush: #cd669a;
-$cyan: #71cbce;
-$navy: #0d223e;
-
-//chosen colors
-$bg-color1: #eee;
-$bg-color2: white;
-$color--text: $navy;
-$color--accent: $atx-hopbush;
 
 * { 
 	box-sizing: border-box;
@@ -54,7 +41,7 @@ body {
 .logo-image--header {
 	@extend %logo-image;
 	@extend %abs-center;
-	width: 130px;
+	width: 140px;
 	height: 100px;
-	top: 0;
+	top: 2.8rem;
 }

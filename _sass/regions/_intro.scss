@@ -1,0 +1,15 @@
+.intro--home {
+	background: linear-gradient( rgba(0, 0, 0, .7), rgba(0, 0, 0, .8)), 50% url("../images/atxsass-meetup.jpg");
+	background-size: cover;
+	padding: 6em 0;
+	
+	article {
+		@extend %container;
+		border: 1px solid $color--text--invert;
+		padding: 3em;
+
+		p, h1, h2 {
+			color: $color--text--invert;
+		}
+	}
+}
