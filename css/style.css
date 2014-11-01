@@ -1,6 +1,6 @@
 /** Compass Reset **/
 html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+h1, h2, h3, h4, h5, h6, p, header .title, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -54,90 +54,154 @@ img, video {
   max-width: 100%;
   height: auto; }
 
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Open Sans';
+  background-color: #eeeeee; }
+
+.post-header h1 {
+  margin: 0 auto; }
+
+.logo-image--header {
+  background: url("../images/ATXSass-Logo.png") 100%;
+  background-size: 100%;
+  display: block; }
+
+.logo-image--header {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  right: 0;
+  left: 0; }
+
+.logo-image--header {
+  width: 140px;
+  height: 100px;
+  top: 2.8rem; }
+
+::-moz-selection {
+  background-color: #cc6699;
+  color: white; }
+
+::selection {
+  background-color: #cc6699;
+  color: white; }
+
 /**
  * Hover image state for a button.
  */
-.contrib-btn, #navigation .menubar-link {
+.button--white--outline {
+  text-decoration: none; }
+
+.button--white--outline {
   -webkit-transition: background 0.8s;
           transition: background 0.8s; }
-  .contrib-btn:hover, #navigation .menubar-link:hover {
-    background: #71cbce; }
+  .button--white--outline:hover {
+    background: #cd669a; }
+
+.button--white--outline {
+  border-top: none;
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+  border-bottom: 2px solid white; }
 
 /**
  * A container partial.
  */
-main,
-#header {
-  max-width: 888px;
-  margin: 0 auto;
-  padding: .2em; }
-
-body {
-  font-family: 'Open Sans';
-  height: 1200px;
-  overflow: hidden;
-  background: #cc6699;
-  background: -webkit-radial-gradient(0% 100%, ellipse cover, rgba(104, 128, 178, 0.4) 10%, rgba(138, 114, 176, 0) 40%), -webkit-linear-gradient(top, rgba(157, 173, 219, 0.25) 0%, rgba(142, 60, 187, 0.4) 100%), -webkit-linear-gradient(315deg, #cc6699 0%, #000925 100%);
-  background: radial-gradient(0% 100%, ellipse cover, rgba(104, 128, 178, 0.4) 10%, rgba(138, 114, 176, 0) 40%), linear-gradient(to bottom, rgba(157, 173, 219, 0.25) 0%, rgba(142, 60, 187, 0.4) 100%), linear-gradient(135deg, #cc6699 0%, #000925 100%); }
+.intro--home article,
+.container {
+  max-width: 760px;
+  margin: 0 auto; }
 
 /**
  * Font partials.
  */
+body {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5; }
+
 h1 {
   font-size: 2em;
-  color: white;
+  color: #0d223e;
   text-align: center;
   font-weight: 400;
   margin-bottom: 1em; }
 
 h2 {
   font-size: 1.5em;
-  color: white;
-  font-weight: 400;
+  color: #0d223e;
+  font-weight: 600;
   margin-bottom: 1em; }
 
-.logo-image {
-  background: url("../images/ATXSass-Logo.png") 100%;
-  width: 100%;
-  max-width: 400px;
-  height: 260px;
-  display: block;
-  position: relative;
-  background-size: 100%;
-  margin: 20px auto 15px; }
-  @media (min-width: 450px) {
-    .logo-image {
-      margin: 60px auto 20px; } }
+p, header .title {
+  line-height: 1.5; }
 
-.donation-form {
-  margin: 0 auto;
-  text-align: center;
-  width: 200px; }
-
-.contrib-btn {
-  width: 100%; }
+a {
+  color: #cc6699; }
+  a:hover {
+    color: #e6b3cc; }
 
 /**
  * Navigation partial.
  */
 #navigation {
-  margin-top: .2em; }
+  max-width: 580px;
+  display: block;
+  overflow: hidden;
+  float: right; }
   #navigation .menubar-link {
-    padding: .25em .3em;
-    color: white;
-    border-top: none;
-    border-left: 2px solid white;
-    border-right: 2px solid white;
-    border-bottom: 2px solid white;
     text-decoration: none;
-    margin-right: .5em; }
+    -webkit-transition: border-bottom .2s;
+            transition: border-bottom .2s;
+    padding: .5em .3em;
+    color: white;
+    margin-right: .5em;
+    display: inline-block; }
     @media (min-width: 450px) {
       #navigation .menubar-link {
         padding: .4em 1em;
         margin-right: 1em; } }
+    #navigation .menubar-link.active {
+      border-bottom: 2px solid rgba(205, 102, 154, 0.5); }
+    #navigation .menubar-link.active-trail {
+      border-bottom: 2px solid rgba(205, 102, 154, 0.3); }
+    #navigation .menubar-link:hover {
+      border-bottom: 2px solid #cd669a; }
 
 /**
  * Teaser display
  */
 .teaser {
-  margin-bottom: 2em; }
+  margin: 0 auto; }
+
+/**
+ * Home Page
+ */
+.intro--home {
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), 50% url("../images/atxsass-meetup.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), 50% url("../images/atxsass-meetup.jpg");
+  background-size: cover;
+  padding: 6em 0; }
+  .intro--home article {
+    border: 1px solid white;
+    padding: 3em; }
+    .intro--home article p, .intro--home article header .title, header .intro--home article .title, .intro--home article h1, .intro--home article h2 {
+      color: white; }
+
+header .title {
+  color: white;
+  float: left;
+  margin: .3em 1em; }
+
+.past-talks li {
+  display: block;
+  width: 100%;
+  overflow: hidden; }
+  .past-talks li img {
+    max-width: 200px;
+    max-height: 200px;
+    float: left;
+    margin: 2em; }
