@@ -4,8 +4,8 @@
 - name: sponsors
   url: /sponsors/
 
-- name: meetups
-  url: /meetups/
+- name: past meetups
+  url: /past-meetups/
 
-- name: talks
-  url: /talks/
+- name: resources
+  url: /resources/

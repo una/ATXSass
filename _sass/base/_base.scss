@@ -18,20 +18,24 @@ $cyan: #71cbce;
 $navy: #0d223e;
 
 //chosen colors
-$color--bg: gainsboro;
+$bg-color1: #eee;
+$bg-color2: white;
 $color--text: $navy;
 $color--accent: $atx-hopbush;
 
 * { 
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
 
 body {
 	font-family: 'Open Sans';
-	background-color: $color--bg;
+	background-color: $bg-color1;
 }
+
+%center {
+	margin: 0 auto;
+}
+
 
 %logo-image {
 	background: url('../images/ATXSass-Logo.png') 100%;
