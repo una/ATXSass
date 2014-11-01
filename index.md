@@ -5,6 +5,7 @@ subtitle: Keeping Austin Sassy.
 id: home
 ---
 <section class="intro--home">
+	<div class="logo-image--header"></div>
 	<article>
 		<h2>{{ page.subtitle }}</h2>
 		<p class="intro--description">

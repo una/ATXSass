@@ -4,10 +4,22 @@ date: 2014-08-19 19:00:00
 title: "Sass: An Overview"
 speakers: 
   - Elyse Holladay
-link: "https://nvite.com/ATXSass/eb7"
+30-min-speaker:
+  - Flip Stewart
+10-min-speaker:
+  - Eddie Machado
+link: "https://nvite.com/ATXSass/d16"
 categories:
   - intro
-summary: For the first-ever ATXSass meetup, we'll start simple: with an overview. Elyse walks you through the most common Sass features and explain why preprocessors are valuable to the pure CSS fan.
+summary: The ATXSass Meetup is back for September! This month we've got a great lineup of speakers, so get ready to get Sassy.
 ---
 
-For the first-ever ATXSass meetup, we'll start simple: with an overview. I'll walk you through the most common Sass features and explain why preprocessors are valuable to the pure CSS fan. I'll touch briefly on some of the various ways to install and use Sass, and give some tips on starting a new project with Sass—or refactoring your CSS to Sass, my personal favorite topic. Come learn how to use Sass as an authoring tool to help you write maintainable, modular, and way Sassier CSS. (p.s. If you know me, you won't be surprised, but there will be GIFs, there will!)
+The ATXSass Meetup is back for September! This month we've got a great lineup of speakers, so get ready to get Sassy.
+
+Featured Talk: Sass Tooling with Flip Stewart
+
+This talk will cover (mostly) platform agnostic tooling for writing better Sass including: creating Sass lint configs and linting Sass files on save in your text editor, creating Ruby dotfiles, gemfiles, and rakefiles and using the Sass CLI(also discussing why you should use the Ruby implementation of Sass) , and using Sass with Google Chrome's sourcemaps to edit Sass in the browser.
+
+10-Minute Tech Talk: Using Sass Across a Network with Eddie Machado
+
+Eddie's company use a funky setup of one WordPress theme across four different domains (thechive.com, theberry.com, thebrigade.com). They had to setup their Sass files in a way where they could easily change styles across all four without compromising the base. Eddie will share his experiences and setup.

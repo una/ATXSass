@@ -1,4 +1,5 @@
 name: ATX Sass
+title: The ATX Sass Meetup
 permalink: meetups/:year/:month/:day/:title.html
 debug: false
 env: production

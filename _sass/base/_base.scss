@@ -45,3 +45,8 @@ body {
 	height: 100px;
 	top: 2.8rem;
 }
+
+::selection {
+	background-color: $color--main;
+	color: white;
+}
