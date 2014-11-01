@@ -1,6 +1,9 @@
-.title {
-  color: $color--text--invert;
-  float: left;
-  @extend p;
-  margin: .3em 1em;
+header {
+
+	.title {
+	  color: $color--text--invert;
+	  float: left;
+	  @extend p;
+	  margin: .3em 1em;
+	}
 }

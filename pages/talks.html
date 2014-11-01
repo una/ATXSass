@@ -5,6 +5,15 @@ id: talks
 permalink: /past-meetups/
 ---
 
-{% for talk in site.talks %}
-  {% include teaser.html post=talk %}
-{% endfor %}
+<ul class="past-talks">
+	{% for talk in site.talks %}
+		<li>
+			{% if talk.thumbnail-image %}
+			<img src="../images/{{ talk.thumbnail-image }}" alt="{{ talk.title image}}" class="talk-thumb">
+				{% else %}
+					<img src="../images/thumb-placeholder.jpg" alt="Placeholder image for {{talk.title}}">
+			{%endif%}
+		{% include teaser.html post=talk %}
+		</li>
+	{% endfor %}
+</ul>

@@ -1,17 +1,22 @@
 ---
 layout: talk
 date: 2014-08-19 19:00:00
-title: "Sass: An Overview"
+title: "Sass Tooling"
 speakers: 
-  - Elyse Holladay
+  - Flip Stewart
+  - Eddie Machado
 30-min-speaker:
   - Flip Stewart
 10-min-speaker:
   - Eddie Machado
 link: "https://nvite.com/ATXSass/d16"
 categories:
-  - intro
+  - tooling
+  - sass
+  - chrome
+  - linting
 summary: The ATXSass Meetup is back for September! This month we've got a great lineup of speakers, so get ready to get Sassy.
+thumbnail-image: eddie-talk.jpg
 ---
 
 The ATXSass Meetup is back for September! This month we've got a great lineup of speakers, so get ready to get Sassy.
