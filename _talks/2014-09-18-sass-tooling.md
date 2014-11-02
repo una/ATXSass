@@ -2,9 +2,7 @@
 layout: talk
 date: 2014-08-19 19:00:00
 title: "Sass Tooling"
-speakers: 
-  - Flip Stewart
-  - Eddie Machado
+speakers: Flip Stewart and Eddie Machado
 30-min-speaker:
   - Flip Stewart
 10-min-speaker:

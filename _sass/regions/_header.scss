@@ -7,3 +7,17 @@ header {
 	  margin: .3em 1em;
 	}
 }
+
+%logo-image {
+	background: url('../images/ATXSass-Logo.png') 100%;
+	background-size: 100%;
+	display: block;
+}
+
+.logo-image--header {
+	@extend %logo-image;
+	@extend %abs-center;
+	width: 140px;
+	height: 100px;
+	top: 2.8rem;
+}

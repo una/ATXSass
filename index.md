@@ -19,6 +19,16 @@ id: home
 	<!-- Why is reversed not working here? -->
 
 	{% for post in site.talks limit:1 reversed %}
+	  {% if post.thumbnail-image %}
+	  <div class="img-container">
+	  	<img src="../images/{{ post.thumbnail-image }}" alt="{{ post.title image}}" class="post-thumb">
+	  </div>
+	  <div class="img-container">
+	  	{% else %}
+	  	 <div class="img-container">
+	  		<img src="../images/thumb-placeholder.jpg" alt="Placeholder image for {{post.title}}">
+	  	</div>
+	  {%endif%}
 	  {% include teaser.html post=post %}
 	{% endfor %}
 </section>

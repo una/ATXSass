@@ -2,8 +2,7 @@
 layout: talk
 date: 2014-08-19 19:00:00
 title: "Sass: An Overview"
-speakers: 
-  - Elyse Holladay
+speakers: Elyse Holladay
 link: "https://nvite.com/ATXSass/eb7"
 categories:
   - intro

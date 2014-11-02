@@ -1,14 +1,14 @@
 <article class="teaser">
-  <h2 class="title"><a href="{{ include.post.url }}">{{ include.post.title }}</a></h2>
-  {% if site.time <= include.post.date %}
-  <a href="{{ post.link }}">Register Here</a>
-  {% endif %}
-  <div class="metadatas">
+  <div class="metadata">
     <span class="date">{{ include.post.date | date: "%B %d, %Y" }}</span>
-    <span class="speaker">{{ include.post.speaker }}</span>
+    <h1 class="title"><a href="{{ include.post.link }}">{{ include.post.title }}</a></h1>
+    <span class="speakers">Featuring: {{ include.post.speakers }}</span>
   </div>
   <div class="content">
     {{ include.post.summary }}
+    {% if site.time <= include.post.date %}
+    <a href="{{ post.link }}"> &raquo; Register Here</a>
+    {% endif %}
   </div>
-  <div class="read-more"><a href="{{ include.post.url }}">Read More</a></div>
+  <!-- <div class="read-more"><a href="{{ include.post.url }}">Read More</a></div> -->
 </article>

@@ -9,9 +9,13 @@ permalink: /past-meetups/
 	{% for talk in site.talks reversed %}
 		<li>
 			{% if talk.thumbnail-image %}
-			<img src="../images/{{ talk.thumbnail-image }}" alt="{{ talk.title image}}" class="talk-thumb">
+			<div class="img-container">
+				<img src="../images/{{ talk.thumbnail-image }}" alt="{{ talk.title image}}" class="talk-thumb">
+			</div>
 				{% else %}
-					<img src="../images/thumb-placeholder.jpg" alt="Placeholder image for {{talk.title}}">
+					<div class="img-container">
+						<img src="../images/thumb-placeholder.jpg" alt="Placeholder image for {{talk.title}}">
+					</div>
 			{%endif%}
 		{% include teaser.html post=talk %}
 		</li>
