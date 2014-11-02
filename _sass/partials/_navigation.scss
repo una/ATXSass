@@ -9,8 +9,8 @@
     text-decoration: none;
     transition: border-bottom .2s;
     padding: .5em .3em;
-    color: $color--text--invert;
     margin-right: .5em;
+    color: currentColor;
     display: inline-block;
 
     @include breakpoint(450px) {
@@ -19,14 +19,16 @@
     }
 
     &.active {
-      border-bottom: 2px solid rgba($color--main, .5);
+      border-bottom: 1px solid currentColor;
 
     }
 
     &.active-trail {
-      border-bottom: 2px solid rgba($color--main, .3);
+      border-bottom: 1px solid currentColor;
+      opacity: .5;
     }
 
-    &:hover { border-bottom: 2px solid $color--main; }
+    &:hover { border-bottom: 1px solid currentColor;
+      opacity: .5; }
   }
 }

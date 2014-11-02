@@ -1,10 +1,12 @@
 header {
-
+	color: $color--main;
+	
 	.title {
-	  color: $color--text--invert;
-	  float: left;
-	  @extend p;
-	  margin: .3em 1em;
+	@extend p;
+	@extend %bold;
+	color: currentColor;
+	float: left;
+	margin: .3em 1em;
 	}
 }
 
@@ -20,4 +22,8 @@ header {
 	width: 140px;
 	height: 100px;
 	top: 2.8rem;
+}
+
+.header--home {
+	color: white;
 }
