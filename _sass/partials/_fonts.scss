@@ -15,10 +15,14 @@ h1 {
 }
 
 h2 {
+  @extend %bold;
   font-size: 1.5em;
   color: $color--text;
-  font-weight: 600;
   margin-bottom: 1em;
+}
+
+h3 {
+  font-size: 1.2em;
 }
 
 p {
@@ -26,6 +30,7 @@ p {
 }
 
 a {
+  @include transition-duration;
   color: $color--main;
 
   &:hover {

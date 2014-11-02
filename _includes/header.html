@@ -1,5 +1,5 @@
 <header role="banner" id="header" {% if page.id == "home" %}class="header--home"{% endif %}>
-  <h1 class="title"> {{ site.title }} </h1>
+  <a href="/"><h1 class="title"> {{ site.title }} </h1></a>
   <nav role="navigation" id="navigation">
     <div class="menubar" role="menubar">
       {% for nav in site.data.navigation %}

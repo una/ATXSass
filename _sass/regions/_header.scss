@@ -1,6 +1,7 @@
 header {
-	color: $color--main;
-	
+	color:  $color--secondary;
+	height: 2em;
+
 	.title {
 	@extend p;
 	@extend %bold;
@@ -26,4 +27,9 @@ header {
 
 .header--home {
 	color: white;
+	height: 0;
+
+	a {
+		color:  $color--secondary;
+	}
 }

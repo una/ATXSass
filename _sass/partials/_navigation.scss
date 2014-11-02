@@ -7,7 +7,7 @@
 
   .menubar-link {
     text-decoration: none;
-    transition: border-bottom .2s;
+    @include transition-duration(.3s);
     padding: .5em .3em;
     margin-right: .5em;
     color: currentColor;
@@ -19,16 +19,16 @@
     }
 
     &.active {
-      border-bottom: 1px solid currentColor;
+      border-bottom: 2px solid currentColor;
 
     }
 
     &.active-trail {
-      border-bottom: 1px solid currentColor;
+      border-bottom: 2px solid currentColor;
       opacity: .5;
     }
 
-    &:hover { border-bottom: 1px solid currentColor;
+    &:hover { border-bottom: 2px solid currentColor;
       opacity: .5; }
   }
 }

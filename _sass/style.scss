@@ -1,12 +1,12 @@
 /////////////////////////////////////////////////
-// Welcome to the primary Sass file.
-//
-// You can put all of your partials here.
+// ALL OF THE PARTIALS!
 /////////////////////////////////////////////////
 
-@import 'dependancies/mixins.scss';
-@import 'dependancies/vars.scss';
-@import 'dependancies/helpers.scss';
+@import 'reset';
+
+@import 'dependancies/mixins';
+@import 'dependancies/vars';
+@import 'dependancies/helpers';
 
 @import 'base/base';
 

@@ -1,3 +1,8 @@
+%gimme-bullets {
+	list-style: initial;
+	margin-left: 2em;
+}
+
 .past-talks li {
 	display: block;
 	width: 100%;
@@ -9,4 +14,15 @@
 		float: left;
 		margin: 2em;
 	}
+}
+
+//resources
+.one-date {
+	margin-bottom: 2em;
+	@extend %gimme-bullets;
+}
+
+//sponsors
+.sponsor-roll {
+	@extend %gimme-bullets;
 }

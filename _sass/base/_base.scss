@@ -2,8 +2,6 @@
 // Base variables and settings.
 //////////////////////////////
 
-@import 'reset';
-
 @import 'breakpoint';
 @import 'singularitygs';
 @import 'toolkit';
@@ -25,8 +23,6 @@ body {
 
 .post {
 	width: 100%;
-	display: block;
-	overflow: hidden;
 	padding-bottom: 6em;
 
 	h1 {

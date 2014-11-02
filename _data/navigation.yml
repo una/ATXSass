@@ -1,11 +1,11 @@
-- name: home
-  url: /
-
-- name: sponsors
+- name: Sponsor
   url: /sponsors/
 
-- name: past meetups
+- name: Past Meetups
   url: /past-meetups/
 
-- name: resources
+- name: Resources
   url: /resources/
+
+- name: Participate
+  url: https://docs.google.com/forms/d/1ZLPJ1F9Wd0PrLevZKMPZpYN9q2bedJ4to5S0hBupsK0/viewform?usp=send_form

@@ -1,4 +1,4 @@
-name: ATX Sass
+name: ATXSass
 title: The ATX Sass Meetup
 permalink: meetups/:year/:month/:day/:title.html
 debug: false
