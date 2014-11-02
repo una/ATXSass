@@ -54,10 +54,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   right: 0;
   left: 0; }
 
-.past-talks li .speakers, h2, .next-event .date, .next-event .speakers, header .title {
+.past-talks li .speakers, h2, p .focus, header .title .focus, .next-event .date, .next-event .speakers, header .title {
   font-weight: 600; }
 
-.next-event .date {
+aside, .next-event .date {
   font-style: italic; }
 
 *, *:before, *:after {
@@ -179,6 +179,13 @@ a {
   a:hover {
     color: #e6b3cd; }
 
+aside {
+  margin-bottom: 1em;
+  color: white;
+  background: #71cbce;
+  display: inline-block;
+  padding: .5em; }
+
 /**
  * Navigation partial.
  */
@@ -188,21 +195,21 @@ a {
     text-decoration: none;
     -webkit-transition-duration: 0.3s;
             transition-duration: 0.3s;
-    padding: .5em .3em;
+    padding: .5em .5em .2em;
     margin-right: .5em;
     color: currentColor;
     display: inline-block; }
     @media (min-width: 450px) {
       #navigation .menubar-link {
-        padding: .4em 1em;
+        padding: .4em .5em .2em;
         margin-right: 1em; } }
     #navigation .menubar-link.active {
-      border-bottom: 2px solid currentColor; }
+      border-bottom: 3px solid currentColor; }
     #navigation .menubar-link.active-trail {
-      border-bottom: 2px solid currentColor;
+      border-bottom: 3px solid currentColor;
       opacity: .5; }
     #navigation .menubar-link:hover {
-      border-bottom: 2px solid currentColor;
+      border-bottom: 3px solid currentColor;
       opacity: .5; }
 
 /**
@@ -240,13 +247,17 @@ a {
     .intro--home article p, .intro--home article header .title, header .intro--home article .title, .intro--home article h1, .intro--home article h2 {
       color: white; }
 
+.full-bleed {
+  margin-top: 2em; }
+
 header {
   color: #71cbce;
-  height: 2em; }
+  height: 2.3em;
+  border-bottom: 1px solid #eee; }
   header .title {
     color: currentColor;
     float: left;
-    margin: .3em 1em; }
+    margin: .4em 1em .3em; }
 
 .logo-image--header {
   background: url("../images/ATXSass-Logo.png") 100%;
