@@ -16,15 +16,15 @@ id: home
 <section class="next-event">
 	<h2>Our Next Event: </h2>
 
-	<!-- Why is reversed not working here? -->
+	<!-- Why is reversed not working here? reversed works, but when I add both reversed and limit:1 it breaks -->
 
-	{% for post in site.talks limit:1 reversed %}
+	{% for post in site.talks reversed limit:1 %}
 	  {% if post.thumbnail-image %}
 	  <div class="img-container">
 	  	<img src="../images/{{ post.thumbnail-image }}" alt="{{ post.title image}}" class="post-thumb">
 	  </div>
-	  <div class="img-container">
 	  	{% else %}
+	  	<div class="img-container">
 	  	 <div class="img-container">
 	  		<img src="../images/thumb-placeholder.jpg" alt="Placeholder image for {{post.title}}">
 	  	</div>

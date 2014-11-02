@@ -5,6 +5,12 @@
 #navigation {
   float: right;
 
+  @include breakpoint($layout-break) {
+    width: 100%;
+    padding: .5em;
+    background: #eee;
+  }
+
   .menubar-link {
     text-decoration: none;
     @include transition-duration(.3s);
@@ -13,9 +19,8 @@
     color: currentColor;
     display: inline-block;
 
-    @include breakpoint(450px) {
-      padding: .4em .5em .2em;
-      margin-right: 1em;
+    @include breakpoint($layout-break) {
+
     }
 
     &.active {

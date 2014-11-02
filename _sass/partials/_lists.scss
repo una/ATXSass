@@ -21,6 +21,11 @@
 		width: 330px;
 		height: 200px;
 		margin: 0 2em 0 0;
+
+		@include breakpoint($layout-break) {
+			width: 100%;
+			margin-bottom: 1em;
+		}
 	}
 
 	.speakers {

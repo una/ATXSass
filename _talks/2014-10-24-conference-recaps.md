@@ -7,6 +7,7 @@ link: "https://nvite.com/ATXSass/af0"
 categories:
   - conferences
   - panel
+  - talk
 summary: We're hosting a panel of attendees and speakers of both CSSDevConf and SassConf to recap whats new and share resources!
 thumbnail-image: recap-panel.jpg
 ---

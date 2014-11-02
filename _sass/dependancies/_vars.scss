@@ -16,3 +16,7 @@ $color--text--invert: white;
 
 //sizes
 $internal-padding: 3em;
+$container-width: 760px;
+
+//breakpoint
+$layout-break: max-width $container-width
