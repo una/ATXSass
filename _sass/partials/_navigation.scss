@@ -8,27 +8,27 @@
   .menubar-link {
     text-decoration: none;
     @include transition-duration(.3s);
-    padding: .5em .3em;
+    padding: .5em .5em .2em;
     margin-right: .5em;
     color: currentColor;
     display: inline-block;
 
     @include breakpoint(450px) {
-      padding: .4em 1em;
+      padding: .4em .5em .2em;
       margin-right: 1em;
     }
 
     &.active {
-      border-bottom: 2px solid currentColor;
+      border-bottom: 3px solid currentColor;
 
     }
 
     &.active-trail {
-      border-bottom: 2px solid currentColor;
+      border-bottom: 3px solid currentColor;
       opacity: .5;
     }
 
-    &:hover { border-bottom: 2px solid currentColor;
+    &:hover { border-bottom: 3px solid currentColor;
       opacity: .5; }
   }
 }

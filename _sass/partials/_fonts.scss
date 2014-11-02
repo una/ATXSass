@@ -27,6 +27,10 @@ h3 {
 
 p {
 	line-height: 1.5;
+
+  .focus {
+    @extend %bold;
+  }
 }
 
 a {
@@ -36,4 +40,13 @@ a {
   &:hover {
     color: lighten($color--main, 20%)
   }
+}
+
+aside {
+  margin-bottom: 1em;
+  @extend %italic;
+  color: white;
+  background: $color--secondary;
+  display: inline-block;
+  padding: .5em;
 }

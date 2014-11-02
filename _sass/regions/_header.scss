@@ -1,13 +1,14 @@
 header {
 	color:  $color--secondary;
-	height: 2em;
+	height: 2.3em;
+	border-bottom: 1px solid #eee;
 
 	.title {
 	@extend p;
 	@extend %bold;
 	color: currentColor;
 	float: left;
-	margin: .3em 1em;
+	margin: .4em 1em .3em;
 	}
 }
 
