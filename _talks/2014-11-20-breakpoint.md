@@ -8,7 +8,7 @@ categories:
   - breakpoint
   - talk
 summary: breakpoint
-thumbnail-image: recap-panel.jpg
+thumbnail-image: sass-stickers.jpg
 ---
 
 Breakpoint 

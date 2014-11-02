@@ -7,3 +7,17 @@
   max-width: 760px;
   margin: 0 auto;
 }
+
+.img-container {
+	display: block; 
+	position: relative;
+	overflow: hidden;
+	float: left;
+
+	img {
+		position:absolute;
+		top:0;
+		left:0; 
+		width:100%;
+	}
+}

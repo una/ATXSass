@@ -9,7 +9,7 @@ id: home
 	<article>
 		<h2>{{ page.subtitle }}</h2>
 		<p class="intro--description">
-			The Austin Sass Meetup is where Austin area creatives come together monthly to discuss the latest in Sass, Compass, and Front End Development. If you're not familiar, <a href="http://sass-lang.com">Sass</a> is a CSS preprocessor, which allows nested rules, variables, mixins, selector inheritance, and more. Curious? Be sure to attend the next meetup!
+			The Austin Sass Meetup is where Austin area creatives come together monthly to discuss the latest in Sass, Compass, and Front End Development. If you're not familiar, <a href="http://sass-lang.com">Sass</a> is a CSS preprocessor, which allows nested rules, variables, mixins, selector inheritance, and more. Curious? Be sure to <a href="http://twitter.com/atxsass">follow</a> us on Twitter and attend the next meetup!
 		</p>
 	</article>
 </section>
