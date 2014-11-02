@@ -54,7 +54,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   right: 0;
   left: 0; }
 
-h2, .next-event .date, .next-event .speakers, header .title {
+.past-talks li .speakers, h2, .next-event .date, .next-event .speakers, header .title {
   font-weight: 600; }
 
 .next-event .date {
@@ -112,12 +112,18 @@ body {
 .past-talks li {
   display: block;
   width: 100%;
-  overflow: hidden; }
-  .past-talks li img {
-    max-width: 200px;
-    max-height: 200px;
-    float: left;
-    margin: 2em; }
+  overflow: hidden;
+  clear: both;
+  margin: 1em;
+  padding: 1em;
+  background: #f5f5f5; }
+  .past-talks li h1 {
+    margin: 0;
+    font-size: 1.5em; }
+  .past-talks li .img-container {
+    width: 330px;
+    height: 200px;
+    margin: 0 2em 0 0; }
 
 .one-date {
   margin-bottom: 2em; }
@@ -129,6 +135,17 @@ body {
 .container {
   max-width: 760px;
   margin: 0 auto; }
+
+.img-container {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  float: left; }
+  .img-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; }
 
 /**
  * Font partials.
@@ -204,17 +221,13 @@ a {
     font-size: 150%; }
   .next-event .metadata {
     max-width: 500px;
-    margin: -1em auto 0; }
+    margin: -.5em auto 0; }
   .next-event .date {
     font-size: 140%; }
   .next-event .img-container {
-    width: 100%;
-    height: 100%;
-    max-width: 300px;
-    max-height: 300px;
-    float: left; }
-  .next-event img {
-    max-width: 300px; }
+    width: 300px;
+    height: 230px;
+    margin: 0 2em 4em 0; }
 
 .intro--home {
   background: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), 50% url("../images/atxsass-meetup.jpg");
@@ -255,4 +268,5 @@ footer {
   font-size: 80%;
   text-align: center;
   background: #eeeeee;
-  padding: 1em; }
+  padding: 1em;
+  clear: both; }
