@@ -7,6 +7,7 @@ speakers:
 link: "https://nvite.com/ATXSass/eb7"
 categories:
   - intro
+  - talk
 summary: For the first-ever ATXSass meetup, we'll start simple &mdash; with an overview. Elyse walks you through the most common Sass features and explain why preprocessors are valuable to the pure CSS fan.
 ---
 

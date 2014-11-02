@@ -13,11 +13,12 @@ id: home
 		</p>
 	</article>
 </section>
+<section class="next-event">
+	<h2>Our Next Event: </h2>
 
-<h2> Our Next Event: </h2>
+	<!-- Why is reversed not working here? -->
 
-{% for post in site.talks limit:1 reversed %}
-  {% include teaser.html post=post %}
-{% endfor %}
-
-
+	{% for post in site.talks limit:1 reversed %}
+	  {% include teaser.html post=post %}
+	{% endfor %}
+</section>

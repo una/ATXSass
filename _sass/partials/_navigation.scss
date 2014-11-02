@@ -3,10 +3,6 @@
  */
 
 #navigation {
-  max-width: 580px;
-  // margin: 2em auto 3em;
-  display: block;
-  overflow: hidden;
   float: right;
 
   .menubar-link {
@@ -23,26 +19,14 @@
     }
 
     &.active {
-      border-bottom: 2px solid rgba($color--accent, .5);
+      border-bottom: 2px solid rgba($color--main, .5);
 
     }
 
     &.active-trail {
-      border-bottom: 2px solid rgba($color--accent, .3);
+      border-bottom: 2px solid rgba($color--main, .3);
     }
 
-    &:hover { border-bottom: 2px solid $color--accent; }
-
-    // &:nth-child(1),
-    // &:nth-child(2) {
-    //   float: left;
-    // }
-
-    // &:nth-child(3),
-    // &:nth-child(4) {
-    //   float: right;
-    // }
-
+    &:hover { border-bottom: 2px solid $color--main; }
   }
-
 }

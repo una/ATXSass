@@ -15,6 +15,7 @@ categories:
   - sass
   - chrome
   - linting
+  - talk
 summary: The ATXSass Meetup is back for September! This month we've got a great lineup of speakers, so get ready to get Sassy.
 thumbnail-image: eddie-talk.jpg
 ---

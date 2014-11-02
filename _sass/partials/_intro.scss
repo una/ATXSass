@@ -6,7 +6,7 @@
 	article {
 		@extend %container;
 		border: 1px solid $color--text--invert;
-		padding: 3em;
+		padding: $internal-padding;
 
 		p, h1, h2 {
 			color: $color--text--invert;

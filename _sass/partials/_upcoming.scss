@@ -1,0 +1,10 @@
+/**
+ * Upcoming Event
+ */
+
+.next-event {
+  @extend %container;
+  padding: $internal-padding;
+
+  text-align: center;
+}
