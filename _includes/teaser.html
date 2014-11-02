@@ -1,5 +1,8 @@
 <article class="teaser">
   <h2 class="title"><a href="{{ include.post.url }}">{{ include.post.title }}</a></h2>
+  {% if site.time <= include.post.date %}
+  <a href="{{ post.link }}">Register Here</a>
+  {% endif %}
   <div class="metadatas">
     <span class="date">{{ include.post.date | date: "%B %d, %Y" }}</span>
     <span class="speaker">{{ include.post.speaker }}</span>

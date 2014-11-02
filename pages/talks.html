@@ -6,7 +6,7 @@ permalink: /past-meetups/
 ---
 
 <ul class="past-talks">
-	{% for talk in site.talks %}
+	{% for talk in site.talks reversed %}
 		<li>
 			{% if talk.thumbnail-image %}
 			<img src="../images/{{ talk.thumbnail-image }}" alt="{{ talk.title image}}" class="talk-thumb">
