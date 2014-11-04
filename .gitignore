@@ -11,4 +11,4 @@ css
 
 # These should be in global .gitignore
 .sass-cache
-.DS_cache
+.DS_Store
