@@ -8,7 +8,7 @@ categories:
   - singularity
   - talk
   - grids
-summary: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint labore aspernatur aperiam iure repellat esse tempora quisquam, error iusto, maiores quaerat blanditiis ipsum!
+summary: Singularity is a grid framework built from the ground up to be responsive. Taylor will show us how to use it and talk about what makes Singularity stand out in our last talk of 2014!
 thumbnail-image: sass-stickers.jpg
 ---
 
