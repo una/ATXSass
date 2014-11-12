@@ -124,6 +124,10 @@ body {
     width: 330px;
     height: 200px;
     margin: 0 2em 0 0; }
+    @media (max-width: 760px) {
+      .past-talks li .img-container {
+        width: 100%;
+        margin-bottom: 1em; } }
 
 .one-date {
   margin-bottom: 2em; }
@@ -191,6 +195,11 @@ aside {
  */
 #navigation {
   float: right; }
+  @media (max-width: 760px) {
+    #navigation {
+      width: 100%;
+      padding: .5em;
+      background: #eee; } }
   #navigation .menubar-link {
     text-decoration: none;
     -webkit-transition-duration: 0.3s;
@@ -199,10 +208,6 @@ aside {
     margin-right: .5em;
     color: currentColor;
     display: inline-block; }
-    @media (min-width: 450px) {
-      #navigation .menubar-link {
-        padding: .4em .5em .2em;
-        margin-right: 1em; } }
     #navigation .menubar-link.active {
       border-bottom: 3px solid currentColor; }
     #navigation .menubar-link.active-trail {
@@ -217,6 +222,9 @@ aside {
  */
 .teaser {
   margin: 0 auto; }
+  @media (max-width: 760px) {
+    .teaser {
+      clear: both; } }
 
 /**
  * Upcoming Event
