@@ -1,9 +1,9 @@
 ---
 layout: talk
 date: 2014-11-20 19:00:00
-title: "Event Title"
-speakers: Name Name
-link: "#"
+title: "Get Sassy With Singularity"
+speakers: Taylor Smith
+link: "https://nvite.com/ATXSass/cd6"
 categories:
   - breakpoint
   - talk
