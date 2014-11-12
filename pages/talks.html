@@ -1,23 +1,23 @@
 ---
 layout: page
-title: Previous Talks
+title: Previous talks
 id: talks
 permalink: /past-meetups/
 ---
 
 <ul class="past-talks">
-	{% for talk in site.talks reversed %}
+	{% for post in site.posts %}
 		<li>
-			{% if talk.thumbnail-image %}
+			{% if post.thumbnail-image %}
 			<div class="img-container">
-				<img src="../images/{{ talk.thumbnail-image }}" alt="{{ talk.title image}}" class="talk-thumb">
+				<img src="../images/{{ post.thumbnail-image }}" alt="{{ post.title image}}" class="post-thumb">
 			</div>
 				{% else %}
 					<div class="img-container">
-						<img src="../images/thumb-placeholder.jpg" alt="Placeholder image for {{talk.title}}">
+						<img src="../images/thumb-placeholder.jpg" alt="Placeholder image for {{post.title}}">
 					</div>
 			{%endif%}
-		{% include teaser.html post=talk %}
+		{% include teaser.html post=post %}
 		</li>
 	{% endfor %}
 </ul>
