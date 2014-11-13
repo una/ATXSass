@@ -122,7 +122,7 @@ body {
     font-size: 1.5em; }
   .past-talks li .img-container {
     width: 330px;
-    height: 200px;
+    height: 240px;
     margin: 0 2em 0 0; }
     @media (max-width: 760px) {
       .past-talks li .img-container {
