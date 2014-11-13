@@ -1,14 +1,14 @@
 ---
 layout: talk
 date: 2014-11-20 19:00:00
-title: "Get Sassy With Singularity"
+title: "Intro to Singularity"
 speakers: Taylor Smith
 link: "https://nvite.com/ATXSass/cd6"
 categories:
   - singularity
   - talk
   - grids
-summary: Singularity is a grid framework built from the ground up to be responsive. Taylor will show us how to use it and talk about what makes Singularity stand out in our last talk of 2014!
+summary: "Singularity lets you toss out your old, stodgy grid system and create a system of columns and gutters that actually works with your content, allowing different layouts at different breakpoints, a visual order that isn't tied to your source order, and no more terrible class names."
 thumbnail-image: sass-stickers.jpg
 ---
 
