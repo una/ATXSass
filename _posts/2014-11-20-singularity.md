@@ -2,7 +2,7 @@
 layout: talk
 date: 2014-11-20 19:00:00
 title: "Get Sassy With Singularity"
-speakers: Taylor Smith
+speakers: Taylor Smith and Andrea Robertson
 link: "https://nvite.com/ATXSass/cd6"
 categories:
   - singularity
@@ -13,4 +13,6 @@ thumbnail-image: sass-stickers.jpg
 ---
 
 Singularity
+
+Andrea:  using Breakpoint to speed up responsive website development.
 

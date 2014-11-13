@@ -14,7 +14,7 @@ categories:
   - chrome
   - linting
   - talk
-summary: The ATXSass Meetup is back for September! This month we've got a great lineup of speakers, so get ready to get Sassy.
+summary: Flip's talk will cover (mostly) platform agnostic tooling for writing better Sass. Eddie discusses how one Wordpress theme is used across four domains.
 thumbnail-image: eddie-talk.jpg
 ---
 
