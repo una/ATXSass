@@ -67,9 +67,6 @@ img, video {
   max-width: 100%;
   height: auto; }
 
-* {
-  box-sizing: border-box; }
-
 body {
   font-family: 'Open Sans'; }
 
