@@ -3,9 +3,9 @@
  */
 
 .teaser {
-  margin: 0 auto;
+	margin: 0 auto;
 
-  @include breakpoint ($layout-break) {
-  	clear: both;
-  }
+	@include breakpoint ($layout-break) {
+		clear: both;
+	}
 }

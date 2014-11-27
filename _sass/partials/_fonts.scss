@@ -8,45 +8,45 @@ body {
 }
 
 h1 {
-  font-size: 2em;
-  color: $color--text;
-  font-weight: 400;
-  margin-bottom: 1em;
+	font-size: 2em;
+	color: $color--text;
+	font-weight: 400;
+	margin-bottom: 1em;
 }
 
 h2 {
-  @extend %bold;
-  font-size: 1.5em;
-  color: $color--text;
-  margin-bottom: 1em;
+	@extend %bold;
+	font-size: 1.5em;
+	color: $color--text;
+	margin-bottom: 1em;
 }
 
 h3 {
-  font-size: 1.2em;
+	font-size: 1.2em;
 }
 
 p {
 	line-height: 1.5;
 
-  .focus {
-    @extend %bold;
-  }
+	.focus {
+		@extend %bold;
+	}
 }
 
 a {
-  @include transition-duration;
-  color: $color--main;
+	@include transition-duration;
+	color: $color--main;
 
-  &:hover {
-    color: lighten($color--main, 20%)
-  }
+	&:hover {
+		color: lighten($color--main, 20%)
+	}
 }
 
 aside {
-  margin-bottom: 1em;
-  @extend %italic;
-  color: white;
-  background: $color--secondary;
-  display: inline-block;
-  padding: .5em;
+	margin-bottom: 1em;
+	@extend %italic;
+	color: white;
+	background: $color--secondary;
+	display: inline-block;
+	padding: .5em;
 }

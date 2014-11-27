@@ -27,7 +27,3 @@
 %center-text {
 	text-align: center;
 }
-
-@mixin transition-duration($time: .5s) {
-	transition-duration: $time;
-}

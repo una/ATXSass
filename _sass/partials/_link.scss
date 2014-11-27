@@ -8,20 +8,20 @@
 
 %hover-button {
 	@extend %button;
- 	transition: background 0.8s;
+	transition: background 0.8s;
 
-  &:hover {
-    background: $color--main;
-  }
+	&:hover {
+		background: $color--main;
+	}
 }
 
 .button--white--outline {
 	@extend %hover-button;
 	$border: 2px solid white;
 	border: {
-	  top: none;
-	  left: $border;
-	  right: $border;
-	  bottom: $border;
+		top: none;
+		left: $border;
+		right: $border;
+		bottom: $border;
 	}
 }

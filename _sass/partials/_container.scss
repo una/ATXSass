@@ -4,12 +4,12 @@
 
 %container,
 .container {
-  max-width: $container-width;
-  margin: 0 auto;
+	max-width: $container-width;
+	margin: 0 auto;
 }
 
 .img-container {
-	display: block; 
+	display: block;
 	position: relative;
 	overflow: hidden;
 	float: left;
@@ -17,7 +17,7 @@
 	img {
 		position:absolute;
 		top:0;
-		left:0; 
+		left:0;
 		width:100%;
 	}
 }
