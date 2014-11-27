@@ -1,9 +1,13 @@
 @function calculateRem($size) {
-  $remSize: $size / 16px;
-  @return #{$remSize}rem;
+	$remSize: $size / 16px;
+	@return #{$remSize}rem;
 }
 
 @mixin fontsize($size) {
-  font-size: $size; //Fallback in px
-  font-size: calculateRem($size);
+	font-size: $size; //Fallback in px
+	font-size: calculateRem($size);
+}
+
+@mixin transition-duration($time: .5s) {
+	transition-duration: $time;
 }

@@ -3,37 +3,37 @@
  */
 
 #navigation {
-  float: right;
+	float: right;
 
-  @include breakpoint($layout-break) {
-    width: 100%;
-    padding: .5em;
-    background: #eee;
-  }
+	@include breakpoint($layout-break) {
+		width: 100%;
+		padding: .5em;
+		background: #eee;
+	}
 
-  .menubar-link {
-    text-decoration: none;
-    @include transition-duration(.3s);
-    padding: .5em .5em .2em;
-    margin-right: .5em;
-    color: currentColor;
-    display: inline-block;
+	.menubar-link {
+		text-decoration: none;
+		@include transition-duration(.3s);
+		padding: .5em .5em .2em;
+		margin-right: .5em;
+		color: currentColor;
+		display: inline-block;
 
-    @include breakpoint($layout-break) {
+		@include breakpoint($layout-break) {
 
-    }
+		}
 
-    &.active {
-      border-bottom: 3px solid currentColor;
+		&.active {
+			border-bottom: 3px solid currentColor;
 
-    }
+		}
 
-    &.active-trail {
-      border-bottom: 3px solid currentColor;
-      opacity: .5;
-    }
+		&.active-trail {
+			border-bottom: 3px solid currentColor;
+			opacity: .5;
+		}
 
-    &:hover { border-bottom: 3px solid currentColor;
-      opacity: .5; }
-  }
+		&:hover { border-bottom: 3px solid currentColor;
+			opacity: .5; }
+	}
 }
