@@ -45,7 +45,7 @@ a {
 aside {
 	margin-bottom: 1em;
 	@extend %italic;
-	color: white;
+	color: $color--text--invert;
 	background: $color--secondary;
 	display: inline-block;
 	padding: .5em;
