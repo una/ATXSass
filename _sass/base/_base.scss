@@ -17,7 +17,7 @@ body {
 
 ::selection {
 	background-color: $color--main;
-	color: white;
+	color: $color--text--invert;
 }
 
 .post {
