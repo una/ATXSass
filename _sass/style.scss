@@ -2,13 +2,10 @@
 // ALL OF THE PARTIALS!
 /////////////////////////////////////////////////
 
-@import 'reset';
+@import 'config/config';
 
-@import 'dependancies/mixins';
-@import 'dependancies/vars';
-@import 'dependancies/helpers';
-
-@import 'base/base';
+@import 'global/base';
+@import 'global/extendables';
 
 @import 'partials/link';
 @import 'partials/lists';

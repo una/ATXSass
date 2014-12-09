@@ -1,0 +1,21 @@
+// colors
+//sass colors
+$atx-hopbush: #cd669a;
+$cyan: #71cbce;
+$navy: #0d223e;
+$white: white;
+$gray: #eee;
+
+//chosen colors
+$bg-color1: $gray;
+$color--main: $atx-hopbush;
+$color--secondary: $cyan;
+$color--text: $navy;
+$color--text--invert: $white;
+
+//sizes
+$internal-padding: 3em;
+$container-width: 760px;
+
+//breakpoint
+$layout-break: max-width $container-width
