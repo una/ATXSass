@@ -16,8 +16,6 @@ id: home
 <section class="next-event">
 	<h2>Our Next Event: </h2>
 
-	<!-- Why is reversed not working here? reversed works, but when I add both reversed and limit:1 it breaks -->
-
 	{% for post in site.posts reversed limit:1 %}
 	  {% if post.thumbnail-image %}
 	  <div class="img-container">
