@@ -12,3 +12,4 @@ css
 # These should be in global .gitignore
 .sass-cache
 .DS_Store
+npm-debug.log
