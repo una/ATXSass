@@ -40,6 +40,16 @@
 }
 
 //sponsors
-.sponsor-roll {
+.secondary-sponsor-roll {
 	@extend %gimme-bullets;
+}
+
+.main-sponsor-roll {
+  img {
+    max-width: 200px;
+  }
+
+  li {
+    display: inline-block;
+  }
 }
