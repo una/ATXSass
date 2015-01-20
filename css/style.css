@@ -145,7 +145,7 @@ aside, .next-event .date {
 }
 
 /* line 1, ../_sass/partials/_lists.scss */
-.one-date, .sponsor-roll {
+.one-date, .secondary-sponsor-roll {
   list-style: initial;
   margin-left: 2em;
 }
@@ -182,6 +182,15 @@ aside, .next-event .date {
 /* line 37, ../_sass/partials/_lists.scss */
 .one-date {
   margin-bottom: 2em;
+}
+
+/* line 48, ../_sass/partials/_lists.scss */
+.main-sponsor-roll img {
+  max-width: 200px;
+}
+/* line 52, ../_sass/partials/_lists.scss */
+.main-sponsor-roll li {
+  display: inline-block;
 }
 
 /**
