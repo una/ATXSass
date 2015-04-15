@@ -187,8 +187,13 @@ aside, .next-event .date {
 /* line 48, ../_sass/partials/_lists.scss */
 .main-sponsor-roll img {
   max-width: 200px;
+  vertical-align: middle;
 }
 /* line 52, ../_sass/partials/_lists.scss */
+.main-sponsor-roll img:first-child {
+  margin-right: 1.5em;
+}
+/* line 57, ../_sass/partials/_lists.scss */
 .main-sponsor-roll li {
   display: inline-block;
 }
