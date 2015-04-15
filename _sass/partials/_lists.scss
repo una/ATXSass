@@ -47,6 +47,11 @@
 .main-sponsor-roll {
   img {
     max-width: 200px;
+    vertical-align: middle;
+
+    &:first-child {
+      margin-right: 1.5em;
+    }
   }
 
   li {
